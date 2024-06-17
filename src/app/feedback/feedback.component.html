@@ -1,0 +1,72 @@
+<div class="font-semibold bg-slate-500 p-4 rounded-md m-1 border-b-2">
+  We would ask you to participate in a survey to help us improve our services.
+</div>
+<div class="bg-white border rounded-lg p-4">
+  <h2 class="text-2xl font-medium mb-4">Survey</h2>
+  <form (submit)="func($event)">
+    <div class="mb-4">
+      <label for="name" class="block text-gray-700 font-medium mb-2"
+        >Name</label
+      >
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
+        required
+      />
+    </div>
+    <div class="mb-4">
+      <label for="age" class="block text-gray-700 font-medium mb-2">Age</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        class="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
+        required
+      />
+    </div>
+    <div class="mb-4">
+      <label for="gender" class="block text-gray-700 font-medium mb-2"
+        >Gender</label
+      >
+      <select
+        id="gender"
+        name="gender"
+        class="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
+        required
+      >
+        <option value="">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="mb-4">
+      <label for="rating" class="block text-gray-700 font-medium mb-2">
+        Rate our site</label
+      >
+      <input type="range" min="0" max="20" step="1" class="w-full" />
+    </div>
+    <div class="mb-4">
+      <label for="message" class="block text-gray-700 font-medium mb-2"
+        >Message</label
+      >
+      <textarea
+        id="message"
+        name="message"
+        class="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
+        rows="5"
+      ></textarea>
+    </div>
+    <div>
+      <button
+        type="submit"
+        class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+
+</div>
